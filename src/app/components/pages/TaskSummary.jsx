@@ -1,5 +1,6 @@
 "use client";
 
+import { Line } from "react-chartjs-2";
 import Charts from "../common/charts";
 import { useState } from "react";
 
@@ -194,7 +195,7 @@ const TaskSummary = () => {
   return (
     <>
       <div className="mx-auto max-w-[550px] w-full ">
-        <Charts type={"line"} data={data} options={options} />
+        <Line data={data} options={options} />
       </div>
     </>
   );

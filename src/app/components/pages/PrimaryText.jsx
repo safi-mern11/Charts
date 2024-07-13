@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import Image from "next/image";
 import Charts from "../common/charts";
 import { useState } from "react";
+import { Bar } from "react-chartjs-2";
 const roboto400 = Roboto({
   weight: "400",
   subsets: ["latin"],
@@ -128,7 +129,7 @@ const PrimaryText = () => {
         <Image src="/details.svg" width={24} height={24} />
       </div>
       <div className="border-[2px] border-solid border-[#ECECEC] pt-[18px] pl-[29px] pr-[9px] pb-[31px]">
-        <Charts type="bar" data={data} options={options} />
+        <Bar data={data} options={options} />
         <div className="max-w-[305px] w-full flex justify-between ml-[25px] mt-[25px]">
           <button
             onClick={() => {

@@ -10,6 +10,7 @@ import {
   Legend,
   BarElement,
   Filler,
+
 } from "chart.js";
 import { Chart } from "react-chartjs-2";
 ChartJS.register(
@@ -21,7 +22,7 @@ ChartJS.register(
   Title,
   Tooltip,
   Legend,
-  Filler
+  Filler,
 );
 
 const Charts = ({ type, data, options, width, height }) => {

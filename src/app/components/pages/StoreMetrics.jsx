@@ -1,4 +1,5 @@
 "use client";
+import { Bar, Line } from "react-chartjs-2";
 import Charts from "../common/charts";
 import { useState } from "react";
 const StoreMetrics = () => {
@@ -127,7 +128,7 @@ const StoreMetrics = () => {
   return (
     <>
       <div className="max-w-[857px] w-full mx-auto mt-[200px] flex">
-        <Charts type="bar" data={data} options={options} />
+        <Bar  data={data} options={options} />
         <div className="max-w-[305px] w-full  ml-[25px] mt-[12px]">
           <button
             onClick={() => {

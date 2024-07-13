@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import Image from "next/image";
 import Charts from "../common/charts";
 import { useState } from "react";
+import { Line } from "react-chartjs-2";
 
 const roboto400 = Roboto({
   weight: "400",
@@ -180,13 +181,7 @@ export default function PrimaryText2() {
           <Image src="/details.svg" width={24} height={24} />
         </div>
         <div className="border-[2px] border-solid border-[#ECECEC] pt-[18px] pl-[29px] pr-[37px] pb-[31px]">
-          <Charts
-            type="line"
-            data={data}
-            options={options}
-            width={816}
-            height={197}
-          />
+          <Line data={data} options={options} width={816} height={197} />
           <div className="max-w-[305px] w-full flex justify-between ml-[53px] mt-[25px]">
             <button
               onClick={() => {
